@@ -1,0 +1,76 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ #root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .main-box {
+    background-color: aliceblue;
+    border: 2px solid pink;
+    min-height: 50vh;
+    min-width: 40%;
+    margin-top: 10%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+ }
+
+ .in-box, .password {
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    gap: 5px;
+}
+
+.in-box input , .password input {
+    min-width: 250px;
+    padding: 10px;
+    font-size: medium;
+}
+
+.forgot {
+    display: flex;
+    gap: 20px;
+}
+
+.forgot a {
+    text-decoration: none;
+}
+
+.submit {
+    width: 100px;
+    padding: 10px;
+    background-color: rgb(135, 207, 238);
+    border: none;
+    font-size: medium;
+}
+
+.submit:hover {
+    background-color: rgb(182, 237, 219);
+}
+
+@media (max-width: 768px) {
+    .main-box {
+      width: 80%;
+    }
+
+    .in-box input,
+    .password input {
+      width: 100%;
+    }
+  }
