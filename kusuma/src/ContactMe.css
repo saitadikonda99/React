@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: rgb(13, 17, 22);
+}
+
+.homeImage {
+    height: 30px;
+    margin: 40px;
+    transition: transform 0.3s;
+}
+
+.homeImage:hover {
+    transform: scale(1.5);
+}
+
+.container-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -4%;
+    gap: 30px;
+}
+
+.welcome-img {
+    height: 100px;
+}
+
+.Contact {
+    border: 2px solid rgb(27, 32, 38);
+    min-height: 65vh;
+    min-width: 30%;
+    margin-left: 2%;
+    background-color: rgb(22, 27, 33);
+    border-radius: 10px;
+    margin-right: 2%;
+}
+
+.client-name, .mail, .reason{
+    display: flex;
+    flex-direction: column;
+    margin: 5% 6% 5% 8%;
+    gap: 8px;
+}
+
+.client-name input, .mail input, .reason textarea {
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(13, 17, 22);
+    border: 2px solid rgb(27, 32, 38);
+    border-radius: 10px;
+    margin-top: 2px;
+}
+
+.reason textarea {
+    height: 20vh;
+}
+
+.submit{
+    background-color: green;
+    padding: 10px;
+    width: 82%;
+    margin-top: 5%;
+    margin-left: 10%;
+    border: none;
+    border-radius: 10px;
+}
+
+.Socials {
+    background-color: rgb(13, 17, 22);
+    border: 2px solid rgb(27, 32, 38);
+    border-radius: 10px;
+    height: 16vh;
+    min-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+
+.social-img {
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-img:hover {
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 500px) {
+
+    .welcome {
+        font-size: 15px;
+    }
+
+    .Socials {
+        background-color: rgb(13, 17, 22);
+        border: 2px solid rgb(27, 32, 38);
+        border-radius: 10px;
+        height: 16vh;
+        min-width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .welcome {
+        font-size: 10px;
+    }
+
+    .Socials {
+        background-color: rgb(13, 17, 22);
+        border: 2px solid rgb(27, 32, 38);
+        border-radius: 10px;
+        height: 16vh;
+        min-width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
