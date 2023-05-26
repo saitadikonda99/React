@@ -82,7 +82,7 @@ const ContactMe = () => {
     );
  }
 
- function SM() {
+ export function SM() {
     return (
         <>
         <div className="github">
