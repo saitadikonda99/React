@@ -4,11 +4,8 @@ import React from "react";
 import myImage from './images/Dev.png'
 import './Home.css'
 import { useEffect, useState } from 'react';
-import { SM } from './ContactMe.js';
-import Typed from "react-typed";
-
-
-
+import Profile from './Profile.js';
+import ContactMe from './ContactMe.js';
 
 const Home = () => {
   const [isSectionHidden, setIsSectionHidden] = useState(false);
@@ -105,11 +102,20 @@ const Home = () => {
 
              </ul>
 
-            <Link to="/ContactMe">
+             <Scroll
+              activeClass="active"
+              to="ContactMe"
+              spy={true}
+              smooth={true}
+              offset={-140}
+              duration={500}
+            >
+              
               <button className="ContactMe">
                 Contact Me
               </button>
-            </Link>
+
+            </Scroll>
           </div>
         </nav>
 
@@ -119,50 +125,7 @@ const Home = () => {
     </section>
     <div id="Profile" >
 
-      <div className="Profile-text">
-        <h1>Hyy There,</h1>
-        <h1> I am Tadikonda Sai Manikanta </h1>
-        <div className="Profile-text-inner">
-
-        {/* typing animation */}
-
-        <div className="animated-typing">
-<Typed
-  strings={[
-    "I'm a Full Stack Developer",
-    "I Love Software Development",
-    "I Love All My Subscribers",
-  ]}
-  typeSpeed={150}
-  backSpeed={100}
-  loop
-/>
-</div>
-
-
-        </div>
-        <div >
-
-        <Scroll
-              activeClass="active"
-              to="AboutMe"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-            <button className='Profile-text-button'> About Me</button>
-            </Scroll>
-
-        </div>
-        <div className="About-links">
-          <SM />
-        </div>
-      </div>
-      <div className="Profile-photo">
-
-      </div>
-
+       <Profile />
     </div>
 
     <div id="AboutMe">
@@ -175,6 +138,13 @@ const Home = () => {
       </div>
       <div id="Experience">
       <center> <h1 > Experience. </h1></center>
+      </div>
+
+      <div id="ContactMe">
+      
+      <ContactMe />
+
+
       </div>
       </div>
 

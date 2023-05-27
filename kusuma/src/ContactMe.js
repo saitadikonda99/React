@@ -7,8 +7,6 @@ import linkedIn from './images/linkedin.png';
 import twitter from './images/twitter.png';
 import instagram from './images/instagram.png';
 import github from './images/github.webp';
-
-
 import { Link } from 'react-router-dom';
 
 
@@ -34,16 +32,15 @@ const ContactMe = () => {
 
     return (
         <>
-        <div className="redirect-box">
-            <Link to='/'>
-                <img className='homeImage' src={homeImage} alt="home" />
-            </Link>
-        </div>
         <div className="container-box">
-            <div className="welcome">
-          <img className="welcome-img" src={myImage} value={mail} alt="saitadikonda" />
-            <h1> appreciate your kind interest. </h1>
+            <div className="Get-in-touch">
+            <h1> Get in touch. </h1>
             </div>
+
+            <div className="contactform">
+                <div className="contactform-matter">
+                    <h1> kusuma </h1>
+                </div>
             <div className="Contact">
                 <form onSubmit={handleSubmit}>
                 <div className="client-name">
@@ -65,9 +62,6 @@ const ContactMe = () => {
                 </div>
 
             </div>
-
-            <div className="Socials">
-                <SM />
             </div>
         </div>
         </>

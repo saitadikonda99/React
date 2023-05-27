@@ -9,25 +9,18 @@ body {
     background-color: rgb(13, 17, 22);
 }
 
-.homeImage {
-    height: 30px;
-    margin: 40px;
-    transition: transform 0.3s;
-}
-
-.homeImage:hover {
-    transform: scale(1.5);
-}
 
 .container-box {
+    border: 2px solid salmon;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     gap: 40px;
 }
 
-.welcome {
+.Get-in-touch {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,15 +28,24 @@ body {
     gap: 30px;
 }
 
-.welcome-img {
+.Get-in-touch-img {
     height: 100px;
+}
+
+.contactform {
+    border: 2px solid pink;
+    height: 80vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .Contact {
     border: 2px solid rgb(27, 32, 38);
-    min-height: 65vh;
-    min-width: 30%;
-    margin-left: 2%;
+    min-height: 70vh;
+    min-width: 40%;
+    margin-left: 20%;
     background-color: rgb(22, 27, 33);
     border-radius: 10px;
     margin-right: 2%;
@@ -53,7 +55,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 5% 6% 5% 8%;
-    gap: 8px;
+    gap: 15px;
 }
 
 .client-name input, .mail input, .reason textarea {
@@ -63,6 +65,7 @@ body {
     border: 2px solid rgb(27, 32, 38);
     border-radius: 10px;
     margin-top: 2px;
+    font-size: larger;
 }
 
 .reason textarea {
@@ -103,7 +106,7 @@ body {
 
 @media screen and (max-width: 500px) {
 
-    .welcome {
+    .Get-in-touch {
         font-size: 15px;
     }
 
@@ -122,7 +125,7 @@ body {
 
 @media screen and (max-width: 400px) {
 
-    .welcome {
+    .Get-in-touch {
         font-size: 10px;
     }
 

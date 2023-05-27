@@ -1,0 +1,19 @@
+.animated-typing {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: rgb(241, 234, 234);
+  }
+ 
+.text {
+    color: rgb(255, 11, 11);
+    font-size: 30px;
+}
+
+.typed-cursor {
+    opacity: 1;
+    font-size: 30px;
+    color: rgb(255, 11, 11);
+  }
+  
+  
