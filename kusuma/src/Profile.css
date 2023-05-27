@@ -1,5 +1,5 @@
 #Profile {
-    border: 2px solid pink;
+    border: .1px solid rgb(43, 49, 56);
     height: 100vh;
     max-width: 100%;
     display: flex;

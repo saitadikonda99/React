@@ -1,0 +1,79 @@
+.footer-box {
+    border: 2px solid rgb(43, 49, 56);
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 5px;
+}
+
+.one-one {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.thanks {
+    height: 30vh;
+    width: 40%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.thanks h1, p, .contact-details h1 {
+    color: rgb(153, 155, 157); 
+}
+
+.contact-details {
+    height: 30vh;
+    width: 40%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-gmail {
+    display: flex;
+    gap:10px;
+}
+
+.contact-details img {
+    height: 40px;
+}
+
+.mailto {
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.sm {
+    display: flex;
+    gap: 40px;
+}
+
+.sm img {
+    height: 20px;
+}
+
+.line {
+    border: .1px solid rgb(153, 155, 157); 
+    width: 90%;
+    margin-left: 5%;
+}
+
+.two-two {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

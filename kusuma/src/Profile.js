@@ -2,7 +2,7 @@ import React from 'react';
 import './Mycomponent.css';
 import { Link as Scroll } from 'react-scroll';
 import Mycomponent from './Mycomponent.js';
-import { SM } from './ContactMe.js';
+import SM from './SM';
 import './Profile.css';
 import saiImage from './images/sai.jpeg';
 

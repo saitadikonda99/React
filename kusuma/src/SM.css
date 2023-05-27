@@ -1,0 +1,8 @@
+.social-img {
+    height: 20px;
+    transition: transform 0.3s;
+}
+
+.social-img:hover {
+    transform: scale(1.5);
+}

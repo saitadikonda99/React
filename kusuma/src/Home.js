@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { Link as Scroll } from 'react-scroll';
 import React from "react";
 import myImage from './images/Dev.png'
@@ -6,6 +5,10 @@ import './Home.css'
 import { useEffect, useState } from 'react';
 import Profile from './Profile.js';
 import ContactMe from './ContactMe.js';
+import Footer from './Footer.js';
+import AboutMe from './AboutMe';
+import Projects from './Projects';
+import Experience from './Experience';
 
 const Home = () => {
   const [isSectionHidden, setIsSectionHidden] = useState(false);
@@ -57,7 +60,6 @@ const Home = () => {
             </Scroll>
               </li>
 
-
                 {/*  two  */}
               <li>
               <Scroll
@@ -65,7 +67,7 @@ const Home = () => {
                 to="AboutMe"
                 spy={true}
                 smooth={true}
-                offset={-140}
+                offset={-100}
                 duration={500}
               >
            AboutMe
@@ -107,7 +109,7 @@ const Home = () => {
               to="ContactMe"
               spy={true}
               smooth={true}
-              offset={-140}
+              offset={-70}
               duration={500}
             >
               
@@ -129,15 +131,15 @@ const Home = () => {
     </div>
 
     <div id="AboutMe">
-    <center> <h1 > AboutMe. </h1></center>
+    <AboutMe/>
     </div>
 
       <div id="Projects">
-      <center> <h1 > Projects. </h1></center>
+      <Projects />
 
       </div>
       <div id="Experience">
-      <center> <h1 > Experience. </h1></center>
+      < Experience/>
       </div>
 
       <div id="ContactMe">
@@ -149,7 +151,7 @@ const Home = () => {
       </div>
 
       <footer>
-          <center> <h1> footer. </h1> </center>
+       <Footer/ >
       </footer>
       </>
     );

@@ -11,7 +11,7 @@ body {
 
 
 .container-box {
-    border: 2px solid salmon;
+    border: 2px solid rgb(43, 49, 56);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,31 +24,44 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -4%;
-    gap: 30px;
+    font-size: 40px;
 }
 
-.Get-in-touch-img {
-    height: 100px;
+.Get-in-touch h1{
+    color: rgb(153, 155, 157);
+}
+
+.contactform-matter {
+   width: 100%;
+   height: 60vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: baseline;
+   font-size: 40px;
+}
+
+.contactform-matter h1 {
+    color: rgb(27, 32, 38);
+    margin-left: 50px;
+    margin-bottom: 100px;
 }
 
 .contactform {
-    border: 2px solid pink;
     height: 80vh;
     width: 90%;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    gap: 10px;
 }
 
 .Contact {
     border: 2px solid rgb(27, 32, 38);
-    min-height: 70vh;
+    min-height: 74vh;
     min-width: 40%;
-    margin-left: 20%;
     background-color: rgb(22, 27, 33);
     border-radius: 10px;
-    margin-right: 2%;
+    margin-right: 4%;
 }
 
 .client-name, .mail, .reason{
@@ -73,7 +86,7 @@ body {
 }
 
 .submit{
-    background-color: green;
+    background-color: salmon;
     padding: 10px;
     width: 82%;
     margin-top: 5%;
@@ -82,45 +95,12 @@ body {
     border-radius: 10px;
 }
 
-.Socials {
-    background-color: rgb(13, 17, 22);
-    border: 2px solid rgb(27, 32, 38);
-    border-radius: 10px;
-    height: 16vh;
-    min-width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 40px;
-
-}
-
-.social-img {
-    height: 30px;
-    transition: transform 0.3s;
-}
-
-.social-img:hover {
-    transform: scale(1.5);
-}
-
 @media screen and (max-width: 500px) {
 
     .Get-in-touch {
         font-size: 15px;
     }
 
-    .Socials {
-        background-color: rgb(13, 17, 22);
-        border: 2px solid rgb(27, 32, 38);
-        border-radius: 10px;
-        height: 16vh;
-        min-width: 80%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-bottom: 40px;
-    }
 }
 
 @media screen and (max-width: 400px) {
@@ -129,14 +109,4 @@ body {
         font-size: 10px;
     }
 
-    .Socials {
-        background-color: rgb(13, 17, 22);
-        border: 2px solid rgb(27, 32, 38);
-        border-radius: 10px;
-        height: 16vh;
-        min-width: 80%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
 }

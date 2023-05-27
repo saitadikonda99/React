@@ -1,0 +1,23 @@
+
+.projects-heading h1{
+    font-size: 80px;
+    color: rgb(76, 77, 77);
+}
+
+.Projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.projects {
+    border: 2px solid salmon;
+    height: 40vh;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
