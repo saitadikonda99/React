@@ -4,6 +4,10 @@
     font-size: 30px;
     color: rgb(241, 234, 234);
   }
+
+  .submit-button {
+    margin-bottom: 20px;
+  }
  
 .text {
     color: salmon;

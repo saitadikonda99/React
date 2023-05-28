@@ -1,6 +1,6 @@
 .footer-box {
     border: 2px solid rgb(43, 49, 56);
-    height: 40vh;
+    min-height: 40vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,14 +9,14 @@
 }
 
 .one-one {
-    height: 30vh;
+    min-height: 30vh;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 
 .thanks {
-    height: 30vh;
+    min-height: 30vh;
     width: 40%;
     padding: 60px;
     display: flex;
@@ -29,7 +29,7 @@
 }
 
 .contact-details {
-    height: 30vh;
+    min-height: 30vh;
     width: 40%;
     padding: 50px;
     display: flex;
@@ -63,13 +63,13 @@
 
 .line {
     border: .1px solid rgb(153, 155, 157); 
-    width: 90%;
+    max-width: 90%;
     margin-left: 5%;
 }
 
 .two-two {
-    height: 10vh;
-    width: 100%;
+    min-height: 10vh;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

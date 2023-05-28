@@ -6,7 +6,7 @@
 
 .Projects-container {
     display: grid;
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(3, 360px);
     justify-content: center;
     align-items: center;
     gap: 40px;
@@ -15,7 +15,7 @@
 .projects {
     border: 2px solid salmon;
     height: 40vh;
-    width: 400px;
+    max-width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;

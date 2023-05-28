@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ContactMe.css';
+import axios from 'axios';
 
 const ContactMe = () => {
     const [data, setData] = useState({
@@ -16,8 +17,28 @@ const ContactMe = () => {
 
     const handleSubmit = (e) => {
             e.preventDefault();
-            alert('successfully register');
-            console.log(data);
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const isValid = emailRegex.test(mail);
+
+            if(!isValid) {
+                alert('enter the valid mail');
+                setData({
+                    client: '',
+                    mail: '',
+                    reason: '',
+                  });
+            }  else {
+                axios
+                .post('https://portfolio-0505-default-rtdb.firebaseio.com/portfolio.json', data)
+                        .then( () => {
+                            alert('Thank You - from SAI ');
+                            setData({
+                                client: '',
+                                mail: '',
+                                reason: '',
+                              })
+                         } );
+            }
     }
 
     return (
@@ -45,12 +66,12 @@ const ContactMe = () => {
             <label htmlFor="reason"> Please Specify Your Purpose of Contact </label>
             <textarea type="text" name='reason' placeholder='....' value={reason} onChange={handleData}/>
                     </div>
-            </form>
+       
 
             <div className="submit-button">
                 <Button handle = { handleSubmit} />
                 </div>
-
+                </form>
             </div>
             </div>
         </div>
